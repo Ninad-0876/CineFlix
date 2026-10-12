@@ -1,0 +1,29 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Movie catalog:
+    // Anyone can read movies.
+    // Client applications cannot create, update, or delete movies.
+    match /movies/{movieId} {
+      allow read: if true;
+      allow write: if false;
+    }
+
+    // User profile:
+    // A signed-in user can only access their own profile.
+    match /users/{userId} {
+      allow read, create, update: if request.auth != null
+                                   && request.auth.uid == userId;
+      allow delete: if false;
+
+      // User watchlist:
+      // A signed-in user can only access their own My List.
+      match /myList/{movieId} {
+        allow read, write: if request.auth != null
+                           && request.auth.uid == userId;
+      }
+    }
+  }
+}

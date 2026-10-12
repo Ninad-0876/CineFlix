@@ -1,0 +1,42 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "cineflix-d573a",
+          "appId": "1:745434988981:android:de4270a78d2ad68d0459fc",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "cineflix-d573a",
+          "configurations": {
+            "android": "1:745434988981:android:de4270a78d2ad68d0459fc",
+            "ios": "1:745434988981:ios:e08bd446b33705ad0459fc",
+            "macos": "1:745434988981:ios:e08bd446b33705ad0459fc",
+            "web": "1:745434988981:web:a79d823a18e1400d0459fc",
+            "windows": "1:745434988981:web:aa406e90408606f20459fc"
+          }
+        }
+      }
+    }
+  },
+  "firestore": {
+    "rules": "firestore.rules"
+  },
+  "hosting": {
+    "public": "build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
