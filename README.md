@@ -33,16 +33,19 @@ A cross-platform OTT movie streaming application built with **Flutter, Dart, and
 
 ## 🖥️ Application Preview
 
-Add screenshots of your actual application in the `screenshots/` folder and embed them here.
+## 🖥️ Application Screenshots
 
-| Login Screen | Home Screen |
-|---|---|
-| Add `screenshots/login.png` | Add `screenshots/home.png` |
+### Login Screen
+![CineFlix Login](screenshots/login.png)
 
-| Movie Details | My List |
-|---|---|
-| Add `screenshots/movie-details.png` | Add `screenshots/my-list.png` |
+### Home Screen
+![CineFlix Home](screenshots/home.png)
 
+### Movie Details
+![CineFlix Movie Details](screenshots/movie-details.png)
+
+### My List
+![CineFlix My List](screenshots/my-list.png)
 ## 🚀 Getting Started
 
 ### Prerequisites
